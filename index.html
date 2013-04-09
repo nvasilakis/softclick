@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Softclick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse">
+      <div class="btn-group" data-toggle="button">
+        <button class="btn btn-primary" id="soft-primary"><i class="icon-play icon-white" id="soft-icon"></i></button> <!-- on click turn black -->
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Show Results</a></li>
+          <li><a href="#">Export Summary</a></li>
+          <li><a href="#">Configure</a></li>
+          <li class="divider"></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div>
+
+
+    <script type="text/javascript">
+          var stopped = true;
+          $('#soft-primary').on('click', function () {
+            if (stopped) {
+              $('#soft-icon').attr('class', 'icon-stop icon-white');
+            } else {
+              $('#soft-icon').attr('class', 'icon-play icon-white');
+            }
+            stopped = !stopped;
+          });
+
+    </script>
+  </body>
+</html>
