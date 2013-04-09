@@ -1,4 +1,5 @@
 softclick
 =========
 
-A clicker replacement so awesome, it should be illegal!
+Softclick back-end expects a hardcoded list of ids.
+
